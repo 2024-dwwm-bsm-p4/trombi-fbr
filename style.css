@@ -2,7 +2,7 @@ body {
   background-color: aquamarine;
 }
 
-.florent {
+.card {
   background-color: white;
   border: solid 2px darkred;
   border-radius: 5%;
@@ -10,8 +10,8 @@ body {
   height: auto;
   border-radius: 5%;
 
-  .florentcontent {
-    .florentinfos {
+  .content {
+    .infos {
       display: flex;
       margin-left: 10px;
       margin-top: 10px;
@@ -36,7 +36,7 @@ body {
       }
     }
 
-    .florentcompetences {
+    .competences {
       margin-left: 10px;
       margin-top: 10px;
       margin-bottom: 10px;
@@ -55,9 +55,17 @@ body {
       #javascript {
         width: 50px;
       }
+
+      #php {
+        width: 50px;
+      }
+
+      #mysql {
+        width: 50px;
+      }
     }
 
-    .florenthobbiesliens {
+    .hobbiesliens {
       display: flex;
       margin-left: 10px;
       margin-top: 10px;
@@ -65,11 +73,11 @@ body {
       border-bottom: solid 1px grey;
       width: 95%;
 
-      .florenthobbies {
+      .hobbies {
         margin-right: auto;
       }
 
-      .florentliens {
+      .liens {
         margin-left: auto;
 
         #github {
