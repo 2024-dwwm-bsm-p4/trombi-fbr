@@ -17,44 +17,30 @@ let layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
 // Adding layer to the map
 map.addLayer(layer);
     
-let marker = new L.Marker(
+let marker1 = new L.Marker(
     [50.728109,1.609119],
     {
         'interactive': true,
     }
 );
 
+let marker2 = new L.Marker(
+    [50.952601,1.853471],
+    {
+        'interactive': true,
+    }
+);
 
-marker.addTo(map);
+marker1.addTo(map);
+marker2.addTo(map);
 
-L.DomUtil.addClass(marker._icon, "test")
+L.DomUtil.addClass(marker1._icon, "mark1");
+L.DomUtil.addClass(marker2._icon, "mark2");
 
 
-const marker1 = document.querySelector(".test")
+const aledorian = document.querySelector(".mark1");
+const florent = document.querySelector(".mark2");
 
-marker1.addEventListener("click", (e) => {
-    console.log("je fonctionne")
+florent.addEventListener("click", (e) => {
+    document.querySelector('.popup').removeAttribute = "hidden"
 })
-
-const data = {
-    1: {
-        "id" : 1,
-        "name" : "Legrand",
-        "firstname": "Aledorian",
-        "city" : "Boulogne sur mer",
-        "stack" : "HTML, CSS, JS, PHP",
-        "hobbies" : "Arts, Jeux videos" 
-    }, 
-    2: {
-        "id" : 2,
-        "name" : "Doe",
-        "firstname": "John",
-        "city" : "Boulogne sur mer",
-        "stack" : "HTML, CSS, JS, PHP",
-        "hobbies" : "Arts, Jeux videos" 
-    }   
-}
-
-
-
-
