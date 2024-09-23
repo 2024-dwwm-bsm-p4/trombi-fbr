@@ -1,0 +1,85 @@
+body {
+  background-color: aquamarine;
+}
+
+.florent {
+  background-color: white;
+  border: solid 2px darkred;
+  border-radius: 5%;
+  width: 550px;
+  height: auto;
+  border-radius: 5%;
+
+  .florentcontent {
+    .florentinfos {
+      display: flex;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 95%;
+
+      #photo {
+        width: 100px;
+        height: auto;
+        border-radius: 100%;
+        border: solid 3px darkred;
+        margin-right: 10px;
+      }
+
+      .ville {
+        display: flex;
+
+        #cityicon {
+          width: 25px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .florentcompetences {
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-top: solid 1px grey;
+      border-bottom: solid 1px grey;
+      width: 95%;
+
+      #html {
+        width: 50px;
+      }
+
+      #css {
+        width: 50px;
+      }
+
+      #javascript {
+        width: 50px;
+      }
+    }
+
+    .florenthobbiesliens {
+      display: flex;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-bottom: solid 1px grey;
+      width: 95%;
+
+      .florenthobbies {
+        margin-right: auto;
+      }
+
+      .florentliens {
+        margin-left: auto;
+
+        #github {
+          width: 50px;
+        }
+
+        #linkedin {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
