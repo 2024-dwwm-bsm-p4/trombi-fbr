@@ -159,11 +159,29 @@ const perrine = document.querySelector(".mark11");
 const gregoire = document.querySelector(".mark12");
 
 const learners = [aledorian, florent, marine, phillipe, yohann, maxence, julie, sacha, terence, maryline, perrine, gregoire]
+const span = document.querySelector(".close");
 
-for (let i = 0; i < learners.length; i++) {
-    learners[i].addEventListener("click", function() {
-        console.log(document.querySelector("."+(i+1)))
-        document.querySelector(('.'[i+1])).removeAttribute("hidden");
-    }
-)
+console.log(span);
+
+
+const showModal = (name) => {
+    document.querySelector(('.'+name)).style.display = "block" 
 }
+
+const closeModal = (name) => {
+    document.querySelector(('.'+name)).style.display = "none" 
+    console.log("test");
+}
+
+    learners[0].addEventListener("click", function() {
+        showModal("aledorian")
+    });
+
+    span.addEventListener("click", function() {
+        closeModal("aledorian")
+    });
+
+    learners[1].addEventListener("click", function() {
+        showModal("florent")
+    })
+
