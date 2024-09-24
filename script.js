@@ -218,12 +218,42 @@ const closeModal = (name) => {
     })
 
 
-
-
-
-
-
     spans[0].addEventListener("click", function() {
         closeModal("florent")
     });
+    spans[1].addEventListener("click", function() {
+        closeModal("aledorian")
+    });
+    spans[2].addEventListener("click", function() {
+        closeModal("yohann")
+    });
+    spans[3].addEventListener("click", function() {
+        closeModal("maxence")
+    });
+    spans[4].addEventListener("click", function() {
+        closeModal("julie")
+    });
+    spans[5].addEventListener("click", function() {
+        closeModal("sacha")
+    });
+    spans[6].addEventListener("click", function() {
+        closeModal("terence")
+    });
+    spans[7].addEventListener("click", function() {
+        closeModal("maryline")
+    });
+    spans[8].addEventListener("click", function() {
+        closeModal("perrine")
+    });
+    spans[9].addEventListener("click", function() {
+        closeModal("marine")
+    });
+    spans[10].addEventListener("click", function() {
+        closeModal("phillipe")
+    });
+    spans[11].addEventListener("click", function() {
+        closeModal("gregoire")
+    });
+
+
 
