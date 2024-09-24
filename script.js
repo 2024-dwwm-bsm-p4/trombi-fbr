@@ -1,4 +1,6 @@
 let mapContainer = document.querySelector("#my-map")
+const spans = document.querySelectorAll(".close");
+const modals = document.querySelectorAll(".card");
 // Creating map options
 let mapOptions = {
     center: [50.73029, 1.5954],
@@ -34,7 +36,6 @@ let marker2 = new L.Marker(
     }
 );
 
-
 //Marine
 let marker3 = new L.Marker(
     [50.725431,1.604434],
@@ -50,7 +51,6 @@ let marker4 = new L.Marker(
         'interactive': true,
     }
 );
-
 
 //Yohann
 let marker5 = new L.Marker(
@@ -116,19 +116,27 @@ let marker12 = new L.Marker(
     }
 );
 
-marker1.addTo(map);
-marker2.addTo(map);
-marker3.addTo(map);
-marker4.addTo(map);
-marker5.addTo(map);
-marker6.addTo(map);
-marker7.addTo(map);
-marker8.addTo(map);
-marker9.addTo(map);
-marker10.addTo(map);
-marker11.addTo(map);
-marker12.addTo(map);
+//Remy
+let marker13 = new L.Marker(
+    [50.739444,2.303929],
+    {
+        'interactive': true,
+    }
+);
 
+//Nico
+let marker14 = new L.Marker(
+    [50.639151,1.744758],
+    {
+        'interactive': true,
+    }
+);
+
+let markers = [marker1, marker2, marker3,marker4, marker5, marker6, marker7, marker8, marker9, marker10, marker11, marker12, marker13, marker14]
+
+markers.forEach(marker => {
+    marker.addTo(map)
+});
 
 L.DomUtil.addClass(marker1._icon, "mark1");
 L.DomUtil.addClass(marker2._icon, "mark2");
@@ -142,8 +150,8 @@ L.DomUtil.addClass(marker9._icon, "mark9")
 L.DomUtil.addClass(marker10._icon, "mark10");
 L.DomUtil.addClass(marker11._icon, "mark11");
 L.DomUtil.addClass(marker12._icon, "mark12");
-
-
+L.DomUtil.addClass(marker13._icon, "mark13");
+L.DomUtil.addClass(marker14._icon, "mark14");
 
 const aledorian = document.querySelector(".mark1");
 const florent = document.querySelector(".mark2");
@@ -157,9 +165,13 @@ const terence = document.querySelector(".mark9");
 const maryline = document.querySelector(".mark10");
 const perrine = document.querySelector(".mark11");
 const gregoire = document.querySelector(".mark12");
+const remy = document.querySelector(".mark13");
+const nico = document.querySelector(".mark14");
 
-const learners = [aledorian, florent, marine, phillipe, yohann, maxence, julie, sacha, terence, maryline, perrine, gregoire]
-const spans = document.querySelectorAll(".close");
+
+
+const learners = [aledorian, florent, marine, phillipe, yohann, maxence, julie, sacha, terence, maryline, perrine, gregoire, remy, nico]
+
 
 const showModal = (name) => {
     document.querySelector(('.'+name)).style.display = "block" 
@@ -217,6 +229,14 @@ const closeModal = (name) => {
         showModal("gregoire")
     })
 
+    learners[12].addEventListener("click", function() {
+        showModal("remy")
+    })
+
+    learners[13].addEventListener("click", function() {
+        showModal("nico")
+    })
+
 
     spans[0].addEventListener("click", function() {
         closeModal("florent")
@@ -254,6 +274,9 @@ const closeModal = (name) => {
     spans[11].addEventListener("click", function() {
         closeModal("gregoire")
     });
-
-
-
+    spans[12].addEventListener("click", function() {
+        closeModal("remy")
+    });
+    spans[13].addEventListener("click", function() {
+        closeModal("nico")
+    });

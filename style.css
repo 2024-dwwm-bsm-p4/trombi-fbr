@@ -70,43 +70,43 @@
             }
         }
         }
-  
-    .competences {
-      margin-left: 10px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      border-top: solid 1px grey;
-      border-bottom: solid 1px grey;
-      width: 95%;
+    
+        .competences {
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-top: solid 1px grey;
+        border-bottom: solid 1px grey;
+        width: 95%;
 
-      #html {
-        width: 50px;
-      }
+        #html {
+            width: 50px;
+        }
 
-      #css {
-        width: 50px;
-      }
+        #css {
+            width: 50px;
+        }
 
-      #javascript {
-        width: 50px;
-      }
+        #javascript {
+            width: 50px;
+        }
 
-      #php {
-        width: 50px;
-      }
+        #php {
+            width: 50px;
+        }
 
-      #mysql {
-        width: 50px;
-      }
+        #mysql {
+            width: 50px;
+        }
 
-      #csharp {
-        width: 50px;
-      }
+        #csharp {
+            width: 50px;
+        }
 
-      #symfony {
-        width: 50px;
-      }
-    }
+        #symfony {
+            width: 50px;
+        }
+        }
 
         #html {
             width: 50px;
@@ -153,4 +153,3 @@
             }
         }
     }
-
