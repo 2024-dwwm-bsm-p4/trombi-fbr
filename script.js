@@ -4,7 +4,7 @@ const modals = document.querySelectorAll(".card");
 // Creating map options
 let mapOptions = {
     center: [50.73029, 1.5954],
-    zoom: 12,
+    zoom: 10,
 }
     
 // Creating a map object
