@@ -159,10 +159,7 @@ const perrine = document.querySelector(".mark11");
 const gregoire = document.querySelector(".mark12");
 
 const learners = [aledorian, florent, marine, phillipe, yohann, maxence, julie, sacha, terence, maryline, perrine, gregoire]
-const span = document.querySelector(".close");
-
-console.log(span);
-
+const spans = document.querySelectorAll(".close");
 
 const showModal = (name) => {
     document.querySelector(('.'+name)).style.display = "block" 
@@ -170,16 +167,19 @@ const showModal = (name) => {
 
 const closeModal = (name) => {
     document.querySelector(('.'+name)).style.display = "none" 
-    console.log("test");
 }
 
     learners[0].addEventListener("click", function() {
         showModal("aledorian")
     });
 
-    span.addEventListener("click", function() {
-        closeModal("aledorian")
+    spans.forEach(span => {
+        console.log(span);
+        span.addEventListener("click", function() {
+            closeModal("florent")
+        });
     });
+
 
     learners[1].addEventListener("click", function() {
         showModal("florent")
