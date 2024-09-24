@@ -1,65 +1,64 @@
-body{
-    margin: 0;
-}
-#my-map, iframe{
-    width: 100vw;
-    height: 100vh;
-}
-
-.popup{
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 999; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.popup-content{
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-
-.card {
-  background-color: white;
-  border: solid 2px darkred;
-  border-radius: 5%;
-  width: 550px;
-  height: auto;
-  border-radius: 5%;
-
-  .content {
-    .infos {
-      display: flex;
-      margin-left: 10px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      width: 95%;
-
-      #photo {
-        width: 100px;
-        height: auto;
-        border-radius: 100%;
-        border: solid 3px darkred;
-        margin-right: 10px;
-      }
-
-      .ville {
-        display: flex;
-
-        #cityicon {
-          width: 25px;
-          margin-right: 10px;
-        }
-      }
+    body{
+        margin: 0;
+    }
+    #my-map, iframe{
+        width: 100vw;
+        height: 100vh;
     }
 
+    .card{
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 999; /* Sit on top */
+        left: 40%;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: white;
+        border: solid 2px darkred;
+        border-radius: 5%;
+        width: 550px;
+        height: auto;
+        border-radius: 5%;
+        margin: 15% auto; /* 15% from the top and centered */
+        
+    }
+        
+    .card-content{
+        background-color: #fefefe;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%; /* Could be more or less, depending on screen size */
+    }
+
+.content {
+    
+        .infos {
+        display: flex;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 95%;
+
+        #photo {
+            width: 100px;
+            height: auto;
+            border-radius: 100%;
+            border: solid 3px darkred;
+            margin-right: 10px;
+        }
+
+        .ville {
+            display: flex;
+
+            #cityicon {
+            width: 25px;
+            margin-right: 10px;
+            }
+        }
+        }
+  
     .competences {
       margin-left: 10px;
       margin-top: 10px;
@@ -97,29 +96,50 @@ body{
       }
     }
 
-    .hobbiesliens {
-      display: flex;
-      margin-left: 10px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      border-bottom: solid 1px grey;
-      width: 95%;
-
-      .hobbies {
-        margin-right: auto;
-      }
-
-      .liens {
-        margin-left: auto;
-
-        #github {
-          width: 50px;
+        #html {
+            width: 50px;
         }
 
-        #linkedin {
-          width: 50px;
+        #css {
+            width: 50px;
         }
-      }
+
+        #javascript {
+            width: 50px;
+        }
+
+        #php {
+            width: 50px;
+        }
+
+        #mysql {
+            width: 50px;
+        }
+        }
+
+        .hobbiesliens {
+        display: flex;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-bottom: solid 1px grey;
+        width: 95%;
+
+        .hobbies {
+            margin-right: auto;
+        }
+
+        .liens {
+            margin-left: auto;
+
+            #github {
+            width: 50px;
+            }
+
+            #linkedin {
+            width: 50px;
+            }
+        }
+        }
     }
-  }
-}
+
