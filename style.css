@@ -43,6 +43,7 @@
 
         .close:hover{
             cursor: pointer;
+            color: #800
         }
     
         .infos {
