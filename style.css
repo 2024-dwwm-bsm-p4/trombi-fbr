@@ -25,4 +25,93 @@ body{
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Could be more or less, depending on screen size */
+
+.card {
+  background-color: white;
+  border: solid 2px darkred;
+  border-radius: 5%;
+  width: 550px;
+  height: auto;
+  border-radius: 5%;
+
+  .content {
+    .infos {
+      display: flex;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 95%;
+
+      #photo {
+        width: 100px;
+        height: auto;
+        border-radius: 100%;
+        border: solid 3px darkred;
+        margin-right: 10px;
+      }
+
+      .ville {
+        display: flex;
+
+        #cityicon {
+          width: 25px;
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .competences {
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-top: solid 1px grey;
+      border-bottom: solid 1px grey;
+      width: 95%;
+
+      #html {
+        width: 50px;
+      }
+
+      #css {
+        width: 50px;
+      }
+
+      #javascript {
+        width: 50px;
+      }
+
+      #php {
+        width: 50px;
+      }
+
+      #mysql {
+        width: 50px;
+      }
+    }
+
+    .hobbiesliens {
+      display: flex;
+      margin-left: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-bottom: solid 1px grey;
+      width: 95%;
+
+      .hobbies {
+        margin-right: auto;
+      }
+
+      .liens {
+        margin-left: auto;
+
+        #github {
+          width: 50px;
+        }
+
+        #linkedin {
+          width: 50px;
+        }
+      }
+    }
+  }
 }
