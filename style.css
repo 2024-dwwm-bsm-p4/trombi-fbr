@@ -33,6 +33,16 @@
     }
 
 .content {
+
+        .close{
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+
+        .close:hover{
+            cursor: pointer;
+        }
     
         .infos {
         display: flex;
@@ -139,7 +149,6 @@
             #linkedin {
             width: 50px;
             }
-        }
         }
     }
 
