@@ -172,16 +172,58 @@ const closeModal = (name) => {
     learners[0].addEventListener("click", function() {
         showModal("aledorian")
     });
-
-    spans.forEach(span => {
-        console.log(span);
-        span.addEventListener("click", function() {
-            closeModal("florent")
-        });
-    });
-
-
+    
     learners[1].addEventListener("click", function() {
         showModal("florent")
     })
+
+    learners[2].addEventListener("click", function() {
+        showModal("marine")
+    })
+
+    learners[3].addEventListener("click", function() {
+        showModal("phillipe")
+    })
+
+    learners[4].addEventListener("click", function() {
+        showModal("yohann")
+    })
+
+    learners[5].addEventListener("click", function() {
+        showModal("maxence")
+    })
+
+    learners[6].addEventListener("click", function() {
+        showModal("julie")
+    })
+
+    learners[7].addEventListener("click", function() {
+        showModal("sacha")
+    })
+
+    learners[8].addEventListener("click", function() {
+        showModal("terence")
+    })
+
+    learners[9].addEventListener("click", function() {
+        showModal("maryline")
+    })
+
+    learners[10].addEventListener("click", function() {
+        showModal("perrine")
+    })
+
+    learners[11].addEventListener("click", function() {
+        showModal("gregoire")
+    })
+
+
+
+
+
+
+
+    spans[0].addEventListener("click", function() {
+        closeModal("florent")
+    });
 
